@@ -3,5 +3,5 @@
 # ignore tmp files
 *~
 # ignore build dir
-build/*
+#build/*
 
