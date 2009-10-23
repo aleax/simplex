@@ -4,4 +4,11 @@
 *~
 # ignore build dir
 #build/*
+# moc
+moc_*.cpp
+ui_*.h ui_*.h
+
+#Make and binary
+Makefile
+simplex
 
