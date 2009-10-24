@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'mainwindow.ui'
 **
-** Created: Sun Oct 18 19:29:19 2009
+** Created: Sat Oct 24 14:05:32 2009
 **      by: Qt User Interface Compiler version 4.5.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -41,7 +41,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(400, 263);
+        MainWindow->resize(398, 261);
         actionExit = new QAction(MainWindow);
         actionExit->setObjectName(QString::fromUtf8("actionExit"));
         actionExit->setShortcutContext(Qt::ApplicationShortcut);
@@ -54,7 +54,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 400, 23));
+        menuBar->setGeometry(QRect(0, 0, 398, 23));
         menuHello_World = new QMenu(menuBar);
         menuHello_World->setObjectName(QString::fromUtf8("menuHello_World"));
         menuHelp = new QMenu(menuBar);
@@ -63,6 +63,7 @@ public:
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
         MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
+        MainWindow->insertToolBarBreak(mainToolBar);
         statusBar = new QStatusBar(MainWindow);
         statusBar->setObjectName(QString::fromUtf8("statusBar"));
         MainWindow->setStatusBar(statusBar);
