@@ -34,7 +34,7 @@ void MainWindow::aboutQt()
 
 void MainWindow::about()
 {
-    QFrame *form=new QFrame();
+    QDialog *form=new QDialog();
     Ui::About myui;
     myui.setupUi(form);
 

@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>556</width>
-    <height>370</height>
+    <width>554</width>
+    <height>368</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>qSimplex</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="gridWidget" native="true">
@@ -52,7 +52,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>556</width>
+     <width>554</width>
      <height>23</height>
     </rect>
    </property>
