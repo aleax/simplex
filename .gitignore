@@ -6,7 +6,8 @@
 #build/*
 # moc
 moc_*.cpp
-ui_*.h ui_*.h
+ui_*.h
+ui_*.cpp
 
 #Make and binary
 Makefile

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>552</width>
-    <height>366</height>
+    <width>550</width>
+    <height>364</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,32 +24,12 @@
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="1" column="0" colspan="2">
-      <widget class="QLineEdit" name="inputTargetFunction">
-       <property name="text">
-        <string>4*x1+3*x2+x3</string>
-       </property>
-      </widget>
-     </item>
      <item row="1" column="2">
       <widget class="QLabel" name="label_2">
        <property name="text">
         <string>—&gt;</string>
        </property>
       </widget>
-     </item>
-     <item row="1" column="4">
-      <spacer name="horizontalSpacer">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
      </item>
      <item row="1" column="3">
       <widget class="QComboBox" name="inputTaskType">
@@ -65,14 +45,14 @@
        </item>
       </widget>
      </item>
-     <item row="2" column="1" colspan="2">
+     <item row="3" column="0" colspan="4">
       <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>System of restrictions:</string>
+        <string>System of Restrictions:</string>
        </property>
       </widget>
      </item>
-     <item row="4" column="1">
+     <item row="5" column="1">
       <spacer name="verticalSpacer">
        <property name="orientation">
         <enum>Qt::Vertical</enum>
@@ -85,29 +65,36 @@
        </property>
       </spacer>
      </item>
-     <item row="3" column="0" colspan="3">
+     <item row="4" column="0" colspan="2">
       <widget class="QLabel" name="label_4">
        <property name="text">
-        <string>Restrictions amount</string>
+        <string>Restrictions Amount</string>
        </property>
       </widget>
      </item>
-     <item row="3" column="3">
+     <item row="4" column="2">
       <widget class="QSpinBox" name="inputRestrictionsAmount">
        <property name="value">
         <number>2</number>
        </property>
       </widget>
      </item>
-     <item row="0" column="1" colspan="2">
-      <widget class="QLabel" name="label">
+     <item row="1" column="0" colspan="2">
+      <widget class="QLineEdit" name="inputTargetFunction">
        <property name="text">
-        <string>Target Function:</string>
+        <string>4*x1+3*x2+x3</string>
        </property>
       </widget>
      </item>
-     <item row="2" column="4" rowspan="3">
-      <widget class="QFrame" name="frame">
+     <item row="0" column="0" colspan="4">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Target Function</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4" rowspan="5" colspan="2">
+      <widget class="QFrame" name="Problem">
        <property name="frameShape">
         <enum>QFrame::StyledPanel</enum>
        </property>
@@ -115,6 +102,26 @@
         <enum>QFrame::Raised</enum>
        </property>
       </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Solved Problem</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
      </item>
     </layout>
    </widget>
@@ -124,11 +131,11 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>552</width>
+     <width>550</width>
      <height>23</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuHello_World">
+   <widget class="QMenu" name="menuFile">
     <property name="title">
      <string>File</string>
     </property>
@@ -141,7 +148,7 @@
     <addaction name="actionAbout"/>
     <addaction name="actionAbout_Qt"/>
    </widget>
-   <addaction name="menuHello_World"/>
+   <addaction name="menuFile"/>
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
@@ -226,9 +233,26 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>inputTargetFunction</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>targetFunction(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>181</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>about()</slot>
   <slot>aboutQt()</slot>
+  <slot>targetFunction(QString)</slot>
  </slots>
 </ui>

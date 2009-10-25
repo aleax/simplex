@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QDebug>
+#include "tfparser.h"
 
 namespace Ui {
     class MainWindow;
@@ -15,6 +17,7 @@ public:
 
 protected:
     void changeEvent(QEvent *e);
+    TFParser tfparser;
 
 private:
     Ui::MainWindow *ui;
@@ -22,6 +25,7 @@ private:
 private slots:
     void aboutQt();
     void about();
+    void targetFunction(QString f);
 };
 
 #endif // MAINWINDOW_H

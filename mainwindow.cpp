@@ -40,3 +40,8 @@ void MainWindow::about()
 
     form->show();
 }
+
+void MainWindow::targetFunction(QString f)
+{
+    this->tfparser.parse(f);
+}
