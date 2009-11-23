@@ -1,0 +1,10 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x0e\x00s\x00i\x00m\x00p\x00l\x00e\x00x)
+
+[CMake]
+BuildDirs=/home/data/univer/mpor/kursova/simplex/build1
+Current CMake Binary=file:///usr/bin/cmake
+CurrentBuildDir=file:///home/data/univer/mpor/kursova/simplex/build1
+CurrentBuildType=debug
+CurrentInstallDir=
+ProjectRootRelative=./
