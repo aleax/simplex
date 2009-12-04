@@ -12,4 +12,5 @@ ui_*.cpp
 #Make and binary
 Makefile
 simplex
+build/*
 
