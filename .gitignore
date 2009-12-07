@@ -3,7 +3,7 @@
 # ignore tmp files
 *~
 # ignore build dir
-#build/*
+build/*
 # moc
 moc_*.cpp
 ui_*.h
