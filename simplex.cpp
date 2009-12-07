@@ -228,15 +228,25 @@ void simplex::Simplex::calculateTeta(unsigned int divider)
 
 void simplex::Simplex::makeNewSTable(unsigned int leave, unsigned int come)
 {
+    array2D newA;
+    newA.resize(extents[this->res][this->var]);
+
     double div=A[come][leave];
     for(int i=0;i<var; ++i)
-        A[come][i]/=div;
+        newA[come][i]=A[come][i]/div;
     for(int i=0; i<res; ++i)
     {
         //std::cout<<leave<<std::endl; //fixme
         //std::cout<<A[i][0]<<std::endl; //fixme
-        A[i][leave]=0;
-    }    
+        newA[i][leave]=0;
+    }
+
+    for(int i=0; i<res; ++i)
+    for(int j=0; j<var; ++j)
+    {
+        newA[i][j]=div*A[i][j]-A[come][i]*A[i][leave];
+    }
+    this->A=newA;
 
     view();
 }

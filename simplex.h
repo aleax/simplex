@@ -38,6 +38,8 @@ namespace simplex
         std::vector<double> C;
         std::vector<double> B;
         std::vector<char> EQ;
+        array2D A;
+        array2D::extent_gen extents;
 
         std::vector<unsigned int> Basis;
         std::vector<double> CBasis;
@@ -46,8 +48,7 @@ namespace simplex
         std::vector<double> BasicPlan;
         double result,resultPrev;
 
-        array2D A;
-        array2D::extent_gen extents;
+
 
         void calculateM();
         void normalize();
