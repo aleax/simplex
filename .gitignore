@@ -10,7 +10,7 @@ ui_*.h
 ui_*.cpp
 
 #Make and binary
-Makefile
+Makefile*
 simplex
 build/*
 
