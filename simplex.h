@@ -27,13 +27,16 @@ namespace simplex
     public:
         Simplex(int var, int res, double *C, double *B, double **A,bool min, char *EQ);
         void view();
-        int solve();
+        bool solve();
+        bool isError(){return error;}
     protected:
         double M;
         int var;
         int res;
         bool min;
         unsigned int iteration;
+
+        bool error;
 
         std::vector<double> C;
         std::vector<double> B;
@@ -45,7 +48,7 @@ namespace simplex
         std::vector<double> CBasis;
         std::vector<double> Teta;
         std::vector<double> Plan;
-        std::vector<double> BasicPlan;
+        std::vector<double> BasicPlan;  //Опорний план //Бугагашечки
         double result,resultPrev;
 
 
@@ -53,13 +56,13 @@ namespace simplex
         void calculateM();
         void normalize();
         void makeBasis();
-
         bool isOptimal();
 
         unsigned int leaveBasis();
         unsigned int comeBasis();
         void calculateTeta(unsigned int divider);
         void calculateBasicPlan();
+        void calculateResult();
         void makeNewSTable(unsigned int leave, unsigned int come);
     };
 

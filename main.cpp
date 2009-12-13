@@ -46,11 +46,37 @@ int main()
     A[1][2]=1;
     EQ[0]=MORE_EQUAL;
     EQ[1]=LESS_EQUAL;
+     /*int var=3;
+    int res=2;
 
+
+    double **A,*B,*C;
+    B=new double[res];
+    C=new double[var];
+    A=new double*[res];
+    for(int i=0;i<res;++i)
+        A[i]=new double[var];
+    char *EQ=new char[res];
+    C[0]=-1;
+    C[1]=-2;
+    C[2]=2;
+    B[0]=10;
+    B[1]=2;
+    A[0][0]=2;
+    A[0][1]=1;
+    A[0][2]=1;
+    A[1][0]=1;
+    A[1][1]=-1;
+    A[1][2]=0;
+    EQ[0]=EQUAL;
+    EQ[1]=LESS_EQUAL;
+*/
     bool min=true;
     Simplex simplex(var,res,C,B,A,min,EQ);
     //simplex.view(); //fixme
-    simplex.solve();
+    bool err=simplex.solve();
+    if(err==true)
+        std::cerr<<"err"<<std::endl;
 
   return 0;
 }
