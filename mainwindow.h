@@ -17,7 +17,7 @@ public:
 
 protected:
     void changeEvent(QEvent *e);
-    //TFParser tfparser; //fixme
+
     void initDefTask();
     void initInterface();
 
@@ -28,11 +28,6 @@ protected:
     QVector<double> B;
     QVector< QVector<double> > A;
 
-    void addInputVarField(int n);
-    void delInputVarField(int n);
-
-    //void addInputResField(int n);
-    //void delInputResField(int n);
 
 private:
     Ui::MainWindow *ui;
@@ -40,7 +35,7 @@ private:
 private slots:
     void aboutQt();
     void about();
-    void targetFunction(QString f);
+
     void changeInputVarFielsd(int n);
     void changeInputResFielsd(int n);
 };

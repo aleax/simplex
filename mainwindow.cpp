@@ -15,6 +15,13 @@ void MainWindow::initInterface()
 {
     ui->inputControlVariables->setValue(controlVariablesCouner);
     ui->inputRestrictionsAmount->setValue(restrictionsCounter);
+
+    //ui->tableWidgetC->set
+
+    changeInputVarFielsd(controlVariablesCouner);
+    changeInputResFielsd(restrictionsCounter);
+
+
 }
 
 void MainWindow::initDefTask()
@@ -42,10 +49,6 @@ void MainWindow::initDefTask()
     qDebug()<<"C="<<C;
     qDebug()<<"B="<<B;
     qDebug()<<"A="<<A;
-
-    //init gui elements with default task
-    changeInputVarFielsd(controlVariablesCouner);
-    changeInputResFielsd(restrictionsCounter);
 }
 
 MainWindow::~MainWindow()
@@ -79,69 +82,33 @@ void MainWindow::about()
     form->show();
 }
 
-void MainWindow::targetFunction(QString f)
-{
-    //this->tfparser.parse(f);
-}
 
 void MainWindow::changeInputVarFielsd(int n)
 {
     qDebug()<<"changeInputCFielsd"<<n;
-    /*if (n>controlVariablesCouner)
-        addInputVarField(n);
-    if (n<controlVariablesCouner)
-        delInputVarField(n);*/
 
     ui->tableWidgetC->setColumnCount(n);
+    ui->tableWidgetC->resizeColumnsToContents();
+
     ui->tableWidgetA->setColumnCount(n);
+
+    ui->tableWidgetA->resizeColumnsToContents();
+    ui->tableWidgetB->resizeColumnsToContents();
+    ui->tableWidgetEQ->resizeColumnsToContents();
 
     controlVariablesCouner=n;
 
 }
 
-void MainWindow::addInputVarField(int n)
-{
-    qDebug()<<"add";
-    //QDoubleSpinBox a;
-    //ui->InputCField->addWidget(
-    ui->tableWidgetC->setColumnCount(n);
-    ui->tableWidgetA->setColumnCount(n);
-    //ui->tableWidgetC->update();
-}
-
-void MainWindow::delInputVarField(int n)
-{
-    qDebug()<<"del";
-    ui->tableWidgetC->setColumnCount(n);
-    ui->tableWidgetA->setColumnCount(n);
-    //ui->tableWidgetC->update();
-}
 
 void MainWindow::changeInputResFielsd(int n)
 {
     qDebug()<<"changeInputResFielsd"<<n;
-/*    if (n>restrictionsCounter)
-        addInputResField(n);
-    if (n<restrictionsCounter)
-        delInputResField(n);
-*/
+
     ui->tableWidgetA->setRowCount(n);
+    ui->tableWidgetB->setRowCount(n);
+    ui->tableWidgetEQ->setRowCount(n);
+
     restrictionsCounter=n;
-
 }
 
-/*
-void MainWindow::addInputResField(int n)
-{
-    qDebug()<<"add res";
-    ui->tableWidgetA->setRowCount(n);
-}
-
-void MainWindow::delInputVarField(int n)
-{
-    qDebug()<<"del res";
-    ui->tableWidgetC->setColumnCount(n);
-    ui->tableWidgetA->setColumnCount(n);
-    //ui->tableWidgetC->update();
-}
-*/
