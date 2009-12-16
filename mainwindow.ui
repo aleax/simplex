@@ -166,6 +166,13 @@
       </layout>
      </widget>
     </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pushButtonStart">
+      <property name="text">
+       <string>MAKE ALL ZAEBIS!</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -313,11 +320,28 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButtonStart</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>solving()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>about()</slot>
   <slot>aboutQt()</slot>
   <slot>changeInputVarFielsd(int)</slot>
   <slot>changeInputResFielsd(int)</slot>
+  <slot>solving()</slot>
  </slots>
 </ui>

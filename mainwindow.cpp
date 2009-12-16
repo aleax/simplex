@@ -34,6 +34,8 @@ void MainWindow::initDefTask()
     B.fill(0,restrictionsCounter);
     A.resize(restrictionsCounter);
     A.fill(QVector<double>( controlVariablesCouner ) );
+    EQ.fill(EQUAL,restrictionsCounter);
+
     C[0]=4;
     C[1]=3;
     C[2]=1;
@@ -112,3 +114,37 @@ void MainWindow::changeInputResFielsd(int n)
     restrictionsCounter=n;
 }
 
+void MainWindow::solving()
+{
+    qDebug()<<"solving()";
+    getData();
+
+}
+
+void MainWindow::getData()
+{
+    qDebug()<<"getData()";
+
+    C.resize(controlVariablesCouner);
+    B.resize(restrictionsCounter);
+    EQ.resize(restrictionsCounter);
+    A.resize(restrictionsCounter);
+    for(int j=0; j<restrictionsCounter; ++j)
+        A[j].resize(controlVariablesCouner);
+
+
+    for (int i=0;i<controlVariablesCouner; ++i)
+    {
+        C[i]=ui->tableWidgetC->item(0,i)->text().toDouble();
+        for(int j=0; j<restrictionsCounter; ++j)
+        {
+            B[j]=ui->tableWidgetB->item(j,0)->text().toDouble();
+            EQ[j]=ui->tableWidgetEQ->item(j,0)->text().toAscii().constData()[0];
+            A[i][j]=ui->tableWidgetA->item(i,j)->text().toDouble();
+        }
+    }
+    qDebug()<<C;
+    qDebug()<<B;
+    qDebug()<<EQ;
+    qDebug()<<A;
+}

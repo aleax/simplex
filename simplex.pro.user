@@ -314,12 +314,12 @@
   <valuemap type="QVariantMap" >
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Release</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList" >
-    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-HBkBV15nM7,guid=7a65fa1d85f376201cdefdb34b28a9a4</value>
+    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-9El61Lf8ab,guid=6dfa5f5efbf822254edb68474b28b16a</value>
     <value type="QString" >DESKTOP_SESSION=kde</value>
     <value type="QString" >DESKTOP_STARTUP_ID=</value>
     <value type="QString" >DISPLAY=:0.0</value>
     <value type="QString" >DM_CONTROL=/var/run/xdmctl</value>
-    <value type="QString" >GPG_AGENT_INFO=/tmp/gpg-4PNZXP/S.gpg-agent:2073:1</value>
+    <value type="QString" >GPG_AGENT_INFO=/tmp/gpg-7pFEIA/S.gpg-agent:1971:1</value>
     <value type="QString" >GS_LIB=/home/aleax/.fonts</value>
     <value type="QString" >GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/aleax/.gtkrc-2.0:/home/aleax/.gtkrc-2.0-kde4:/home/aleax/.kde/share/config/gtkrc-2.0</value>
     <value type="QString" >GTK_MODULES=canberra-gtk-module</value>
@@ -338,16 +338,16 @@
     <value type="QString" >PWD=/media/data/documents</value>
     <value type="QString" >QTDIR=/usr</value>
     <value type="QString" >QT_PLUGIN_PATH=/home/aleax/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
-    <value type="QString" >SESSION_MANAGER=local/laptop:@/tmp/.ICE-unix/2163,unix/laptop:/tmp/.ICE-unix/2163</value>
+    <value type="QString" >SESSION_MANAGER=local/laptop:@/tmp/.ICE-unix/2061,unix/laptop:/tmp/.ICE-unix/2061</value>
     <value type="QString" >SHELL=/bin/zsh</value>
     <value type="QString" >SHLVL=0</value>
-    <value type="QString" >SSH_AGENT_PID=2072</value>
-    <value type="QString" >SSH_AUTH_SOCK=/tmp/ssh-GjpZDx2034/agent.2034</value>
+    <value type="QString" >SSH_AGENT_PID=1970</value>
+    <value type="QString" >SSH_AUTH_SOCK=/tmp/ssh-DGbuOm1932/agent.1932</value>
     <value type="QString" >USER=aleax</value>
     <value type="QString" >WINDOWPATH=7</value>
     <value type="QString" >XCURSOR_THEME=oxy-white</value>
     <value type="QString" >XDG_DATA_DIRS=/usr/share:/usr/share:/usr/local/share</value>
-    <value type="QString" >XDG_SESSION_COOKIE=378d2c8f3ebc794706f008234b212f9d-1260956066.392285-2061232014</value>
+    <value type="QString" >XDG_SESSION_COOKIE=378d2c8f3ebc794706f008234b212f9d-1260958056.762574-732901642</value>
     <value type="QString" >XDM_MANAGED=method=classic</value>
     <value type="QString" >_=/usr/bin/ssh-agent</value>
    </valuelist>
@@ -369,12 +369,12 @@
   <valuemap type="QVariantMap" >
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Release</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList" >
-    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-HBkBV15nM7,guid=7a65fa1d85f376201cdefdb34b28a9a4</value>
+    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-9El61Lf8ab,guid=6dfa5f5efbf822254edb68474b28b16a</value>
     <value type="QString" >DESKTOP_SESSION=kde</value>
     <value type="QString" >DESKTOP_STARTUP_ID=</value>
     <value type="QString" >DISPLAY=:0.0</value>
     <value type="QString" >DM_CONTROL=/var/run/xdmctl</value>
-    <value type="QString" >GPG_AGENT_INFO=/tmp/gpg-4PNZXP/S.gpg-agent:2073:1</value>
+    <value type="QString" >GPG_AGENT_INFO=/tmp/gpg-7pFEIA/S.gpg-agent:1971:1</value>
     <value type="QString" >GS_LIB=/home/aleax/.fonts</value>
     <value type="QString" >GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/aleax/.gtkrc-2.0:/home/aleax/.gtkrc-2.0-kde4:/home/aleax/.kde/share/config/gtkrc-2.0</value>
     <value type="QString" >GTK_MODULES=canberra-gtk-module</value>
@@ -393,16 +393,16 @@
     <value type="QString" >PWD=/media/data/documents</value>
     <value type="QString" >QTDIR=/usr</value>
     <value type="QString" >QT_PLUGIN_PATH=/home/aleax/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
-    <value type="QString" >SESSION_MANAGER=local/laptop:@/tmp/.ICE-unix/2163,unix/laptop:/tmp/.ICE-unix/2163</value>
+    <value type="QString" >SESSION_MANAGER=local/laptop:@/tmp/.ICE-unix/2061,unix/laptop:/tmp/.ICE-unix/2061</value>
     <value type="QString" >SHELL=/bin/zsh</value>
     <value type="QString" >SHLVL=0</value>
-    <value type="QString" >SSH_AGENT_PID=2072</value>
-    <value type="QString" >SSH_AUTH_SOCK=/tmp/ssh-GjpZDx2034/agent.2034</value>
+    <value type="QString" >SSH_AGENT_PID=1970</value>
+    <value type="QString" >SSH_AUTH_SOCK=/tmp/ssh-DGbuOm1932/agent.1932</value>
     <value type="QString" >USER=aleax</value>
     <value type="QString" >WINDOWPATH=7</value>
     <value type="QString" >XCURSOR_THEME=oxy-white</value>
     <value type="QString" >XDG_DATA_DIRS=/usr/share:/usr/share:/usr/local/share</value>
-    <value type="QString" >XDG_SESSION_COOKIE=378d2c8f3ebc794706f008234b212f9d-1260956066.392285-2061232014</value>
+    <value type="QString" >XDG_SESSION_COOKIE=378d2c8f3ebc794706f008234b212f9d-1260958056.762574-732901642</value>
     <value type="QString" >XDM_MANAGED=method=classic</value>
     <value type="QString" >_=/usr/bin/ssh-agent</value>
    </valuelist>

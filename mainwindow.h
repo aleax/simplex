@@ -26,9 +26,10 @@ protected:
 
     QVector<double> C;
     QVector<double> B;
+    QVector<char> EQ;
     QVector< QVector<double> > A;
 
-
+    void getData();
 private:
     Ui::MainWindow *ui;
 
@@ -38,6 +39,8 @@ private slots:
 
     void changeInputVarFielsd(int n);
     void changeInputResFielsd(int n);
+
+    void solving();
 };
 
 #endif // MAINWINDOW_H
