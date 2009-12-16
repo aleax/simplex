@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>401</width>
-    <height>425</height>
+    <width>403</width>
+    <height>427</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -166,13 +166,6 @@
       </layout>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QPushButton" name="pushButtonStart">
-      <property name="text">
-       <string>MAKE ALL ZAEBIS!</string>
-      </property>
-     </widget>
-    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -324,22 +317,6 @@
     <hint type="destinationlabel">
      <x>150</x>
      <y>214</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonStart</sender>
-   <signal>pressed()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>solving()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>200</x>
-     <y>382</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>200</x>
-     <y>212</y>
     </hint>
    </hints>
   </connection>
