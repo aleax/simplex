@@ -31,6 +31,9 @@ protected:
     void addInputVarField(int n);
     void delInputVarField(int n);
 
+    //void addInputResField(int n);
+    //void delInputResField(int n);
+
 private:
     Ui::MainWindow *ui;
 
@@ -39,6 +42,7 @@ private slots:
     void about();
     void targetFunction(QString f);
     void changeInputVarFielsd(int n);
+    void changeInputResFielsd(int n);
 };
 
 #endif // MAINWINDOW_H

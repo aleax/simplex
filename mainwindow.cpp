@@ -19,6 +19,7 @@ void MainWindow::initInterface()
 
 void MainWindow::initDefTask()
 {
+    //init default demo task
     controlVariablesCouner=3;
     restrictionsCounter=2;
 
@@ -41,7 +42,10 @@ void MainWindow::initDefTask()
     qDebug()<<"C="<<C;
     qDebug()<<"B="<<B;
     qDebug()<<"A="<<A;
-    addInputVarField(C.size());
+
+    //init gui elements with default task
+    changeInputVarFielsd(controlVariablesCouner);
+    changeInputResFielsd(restrictionsCounter);
 }
 
 MainWindow::~MainWindow()
@@ -83,10 +87,14 @@ void MainWindow::targetFunction(QString f)
 void MainWindow::changeInputVarFielsd(int n)
 {
     qDebug()<<"changeInputCFielsd"<<n;
-    if (n>controlVariablesCouner)
+    /*if (n>controlVariablesCouner)
         addInputVarField(n);
     if (n<controlVariablesCouner)
-        delInputVarField(n);
+        delInputVarField(n);*/
+
+    ui->tableWidgetC->setColumnCount(n);
+    ui->tableWidgetA->setColumnCount(n);
+
     controlVariablesCouner=n;
 
 }
@@ -108,3 +116,32 @@ void MainWindow::delInputVarField(int n)
     ui->tableWidgetA->setColumnCount(n);
     //ui->tableWidgetC->update();
 }
+
+void MainWindow::changeInputResFielsd(int n)
+{
+    qDebug()<<"changeInputResFielsd"<<n;
+/*    if (n>restrictionsCounter)
+        addInputResField(n);
+    if (n<restrictionsCounter)
+        delInputResField(n);
+*/
+    ui->tableWidgetA->setRowCount(n);
+    restrictionsCounter=n;
+
+}
+
+/*
+void MainWindow::addInputResField(int n)
+{
+    qDebug()<<"add res";
+    ui->tableWidgetA->setRowCount(n);
+}
+
+void MainWindow::delInputVarField(int n)
+{
+    qDebug()<<"del res";
+    ui->tableWidgetC->setColumnCount(n);
+    ui->tableWidgetA->setColumnCount(n);
+    //ui->tableWidgetC->update();
+}
+*/
