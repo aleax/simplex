@@ -208,6 +208,8 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionExit"/>
+   <addaction name="separator"/>
+   <addaction name="actionSolve"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionExit">
@@ -229,6 +231,11 @@
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionSolve">
+   <property name="text">
+    <string>Solve</string>
    </property>
   </action>
  </widget>
@@ -329,6 +336,22 @@
     <hint type="sourcelabel">
      <x>200</x>
      <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSolve</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>solving()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
     </hint>
     <hint type="destinationlabel">
      <x>200</x>
