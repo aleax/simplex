@@ -5,10 +5,8 @@ TARGET = simplex
 TEMPLATE = app
 SOURCES += main.cpp \
     mainwindow.cpp \
-    tfparser.cpp \
     simplex.cpp
 HEADERS += mainwindow.h \
-    tfparser.h \
     simplex.h
 FORMS += mainwindow.ui \
     about.ui

@@ -18,7 +18,7 @@ simplex::Simplex::Simplex(int var, int res, double *C, double *B, double **A,boo
 	for(int j=0;j<var;++j)
 		this->A[i][j]=A[i][j];
 
-	this->Basis=std::vector<unsigned int>(this->res,0);
+        this->Basis=std::vector<int>(this->res,0);
 	this->CBasis=std::vector<double>(this->res,0);
 	this->Teta=std::vector<double>(this->res,0);
 	this->Plan=std::vector<double>(this->res,0);
@@ -207,7 +207,7 @@ void simplex::Simplex::calculateBasicPlan() //REVIEWED
 	}
 }
 
-unsigned int simplex::Simplex::comeBasis() //REVIEWED / fix by OSIPETKA
+int simplex::Simplex::comeBasis() //REVIEWED / fix by OSIPETKA
 {
 	unsigned int result=0;
 
@@ -226,10 +226,10 @@ unsigned int simplex::Simplex::comeBasis() //REVIEWED / fix by OSIPETKA
 	return result;
 }
 
-unsigned int simplex::Simplex::leaveBasis() //REVIEWED / fix by OSIPETKA
+int simplex::Simplex::leaveBasis() //REVIEWED / fix by OSIPETKA
 {
 
- double temp;
+ double temp=0;
  int maxElem = -1;
 
  for (int i=0; i<res; i++)
@@ -251,13 +251,13 @@ unsigned int simplex::Simplex::leaveBasis() //REVIEWED / fix by OSIPETKA
 
 
 
-void simplex::Simplex::calculateTeta(unsigned int divider) //REVIEWED
+void simplex::Simplex::calculateTeta(int divider) //REVIEWED
 {
 	for(int i=0; i<res; ++i)
                 Teta[i]=Plan[i]/A[i][divider];
 }
 
-void simplex::Simplex::makeNewSTable(unsigned int leave, unsigned int come) //REVIEWED / fix by OSIPETKA
+void simplex::Simplex::makeNewSTable(int leave, int come) //REVIEWED / fix by OSIPETKA
 {
     array2D newA;
     newA.resize(extents[this->res][this->var]);

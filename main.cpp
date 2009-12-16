@@ -1,4 +1,3 @@
-/*
 #include <QtGui/QApplication>
 #include "mainwindow.h"
 
@@ -11,7 +10,9 @@ int main(int argc, char *argv[])
 
 }
 
-*/
+
+
+/*
 #include <iostream>
 #include <vector>
 
@@ -46,7 +47,7 @@ int main()
     A[1][2]=1;
     EQ[0]=MORE_EQUAL;
     EQ[1]=LESS_EQUAL;
-     /*int var=3;
+    int var=3;
     int res=2;
 
 
@@ -70,7 +71,7 @@ int main()
     A[1][2]=0;
     EQ[0]=EQUAL;
     EQ[1]=LESS_EQUAL;
-*/
+
     bool min=true;
     Simplex simplex(var,res,C,B,A,min,EQ);
     //simplex.view(); //fixme
@@ -81,4 +82,4 @@ int main()
   return 0;
 }
 
-
+*/

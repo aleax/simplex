@@ -34,7 +34,7 @@ namespace simplex
         int var;
         int res;
         bool min;
-        unsigned int iteration;
+        int iteration;
 
         bool error;
 
@@ -44,7 +44,7 @@ namespace simplex
         array2D A;
         array2D::extent_gen extents;
 
-        std::vector<unsigned int> Basis;
+        std::vector<int> Basis;
         std::vector<double> CBasis;
         std::vector<double> Teta;
         std::vector<double> Plan;
@@ -58,12 +58,12 @@ namespace simplex
         void makeBasis();
         bool isOptimal();
 
-        unsigned int leaveBasis();
-        unsigned int comeBasis();
-        void calculateTeta(unsigned int divider);
+        int leaveBasis();
+        int comeBasis();
+        void calculateTeta(int divider);
         void calculateBasicPlan();
         void calculateResult();
-        void makeNewSTable(unsigned int leave, unsigned int come);
+        void makeNewSTable(int leave, int come);
     };
 
 }

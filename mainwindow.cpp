@@ -41,6 +41,7 @@ void MainWindow::initDefTask()
     qDebug()<<"C="<<C;
     qDebug()<<"B="<<B;
     qDebug()<<"A="<<A;
+    addInputVarField(C.size());
 }
 
 MainWindow::~MainWindow()
@@ -76,27 +77,34 @@ void MainWindow::about()
 
 void MainWindow::targetFunction(QString f)
 {
-    this->tfparser.parse(f);
+    //this->tfparser.parse(f);
 }
 
-void MainWindow::changeInputCFielsd(int n)
+void MainWindow::changeInputVarFielsd(int n)
 {
     qDebug()<<"changeInputCFielsd"<<n;
     if (n>controlVariablesCouner)
-        addInputCField(n);
+        addInputVarField(n);
     if (n<controlVariablesCouner)
-        delInputCField(n);
+        delInputVarField(n);
+    controlVariablesCouner=n;
 
 }
 
-void MainWindow::addInputCField(int n)
+void MainWindow::addInputVarField(int n)
 {
     qDebug()<<"add";
-    QDoubleSpinBox a;
-//    ui->InputCField->addWidget(
+    //QDoubleSpinBox a;
+    //ui->InputCField->addWidget(
+    ui->tableWidgetC->setColumnCount(n);
+    ui->tableWidgetA->setColumnCount(n);
+    //ui->tableWidgetC->update();
 }
 
-void MainWindow::delInputCField(int n)
+void MainWindow::delInputVarField(int n)
 {
     qDebug()<<"del";
+    ui->tableWidgetC->setColumnCount(n);
+    ui->tableWidgetA->setColumnCount(n);
+    //ui->tableWidgetC->update();
 }

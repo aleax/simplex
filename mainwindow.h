@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <QDebug>
-#include "tfparser.h"
+#include "simplex.h"
 
 namespace Ui {
     class MainWindow;
@@ -17,7 +17,7 @@ public:
 
 protected:
     void changeEvent(QEvent *e);
-    TFParser tfparser;
+    //TFParser tfparser; //fixme
     void initDefTask();
     void initInterface();
 
@@ -28,8 +28,8 @@ protected:
     QVector<double> B;
     QVector< QVector<double> > A;
 
-    void addInputCField(int n);
-    void delInputCField(int n);
+    void addInputVarField(int n);
+    void delInputVarField(int n);
 
 private:
     Ui::MainWindow *ui;
@@ -38,7 +38,7 @@ private slots:
     void aboutQt();
     void about();
     void targetFunction(QString f);
-    void changeInputCFielsd(int n);
+    void changeInputVarFielsd(int n);
 };
 
 #endif // MAINWINDOW_H
