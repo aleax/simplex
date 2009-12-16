@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>403</width>
-    <height>427</height>
+    <width>373</width>
+    <height>451</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,155 +15,161 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout_2">
-    <item row="0" column="0">
-     <widget class="QWidget" name="gridWidget" native="true">
+    <item row="0" column="0" colspan="4">
+     <widget class="QLabel" name="label">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>Target Function</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Task type</string>
+      </property>
+      <property name="buddy">
+       <cstring>inputTaskType</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="0" colspan="2">
+     <widget class="QTableWidget" name="tableWidgetA">
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="inputTaskType">
+      <item>
+       <property name="text">
+        <string>min</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>max</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="10" column="0" colspan="4">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>System of Restrictions</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="3">
+     <widget class="QTableWidget" name="tableWidgetB">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>10</horstretch>
-        <verstretch>10</verstretch>
+       <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="4" column="0" colspan="3">
-        <widget class="QLabel" name="label_3">
-         <property name="text">
-          <string>System of Restrictions</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="0">
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>Namber of Restrictions</string>
-         </property>
-         <property name="buddy">
-          <cstring>inputRestrictionsAmount</cstring>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="0" colspan="3">
-        <widget class="QLabel" name="label">
-         <property name="layoutDirection">
-          <enum>Qt::LeftToRight</enum>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::NoFrame</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Plain</enum>
-         </property>
-         <property name="text">
-          <string>Target Function</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>Task type</string>
-         </property>
-         <property name="buddy">
-          <cstring>inputTaskType</cstring>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="2">
-        <widget class="QComboBox" name="inputTaskType">
-         <item>
-          <property name="text">
-           <string>min</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>max</string>
-          </property>
-         </item>
-        </widget>
-       </item>
-       <item row="5" column="2">
-        <widget class="QSpinBox" name="inputRestrictionsAmount">
-         <property name="minimum">
-          <number>1</number>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QSpinBox" name="inputControlVariables">
-         <property name="minimum">
-          <number>1</number>
-         </property>
-         <property name="value">
-          <number>3</number>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_5">
-         <property name="text">
-          <string>Namber of Control variables</string>
-         </property>
-         <property name="buddy">
-          <cstring>inputControlVariables</cstring>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0" colspan="3">
-        <widget class="QTableWidget" name="tableWidgetC">
-         <row>
-          <property name="text">
-           <string>C</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>1</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-       <item row="6" column="0">
-        <layout class="QHBoxLayout" name="horizontalLayout"/>
-       </item>
-       <item row="7" column="0">
-        <widget class="QTableWidget" name="tableWidgetA">
-         <row>
-          <property name="text">
-           <string>1</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>1</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-       <item row="7" column="2">
-        <widget class="QTableWidget" name="tableWidgetB">
-         <column>
-          <property name="text">
-           <string>B</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-       <item row="7" column="1">
-        <widget class="QTableWidget" name="tableWidgetEQ">
-         <column>
-          <property name="text">
-           <string>EQ</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-      </layout>
+      <column>
+       <property name="text">
+        <string>B</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="19" column="2">
+     <widget class="QTableWidget" name="tableWidgetEQ">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <column>
+       <property name="text">
+        <string>EQ</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="12" column="0" colspan="2">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Namber of Restrictions</string>
+      </property>
+      <property name="buddy">
+       <cstring>inputRestrictionsAmount</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QSpinBox" name="inputControlVariables">
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="value">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="2">
+     <widget class="QSpinBox" name="inputRestrictionsAmount">
+      <property name="minimum">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QTableWidget" name="tableWidgetC">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <row>
+       <property name="text">
+        <string>C</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Namber of Control variables</string>
+      </property>
+      <property name="buddy">
+       <cstring>inputControlVariables</cstring>
+      </property>
      </widget>
     </item>
    </layout>
@@ -233,11 +239,6 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <tabstops>
-  <tabstop>inputTaskType</tabstop>
-  <tabstop>inputControlVariables</tabstop>
-  <tabstop>inputRestrictionsAmount</tabstop>
- </tabstops>
  <resources/>
  <connections>
   <connection>
@@ -289,6 +290,22 @@
    </hints>
   </connection>
   <connection>
+   <sender>actionSolve</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>solving()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
    <sender>inputControlVariables</sender>
    <signal>valueChanged(int)</signal>
    <receiver>MainWindow</receiver>
@@ -317,22 +334,6 @@
     <hint type="destinationlabel">
      <x>150</x>
      <y>214</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>actionSolve</sender>
-   <signal>activated()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>solving()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>-1</x>
-     <y>-1</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>200</x>
-     <y>212</y>
     </hint>
    </hints>
   </connection>
